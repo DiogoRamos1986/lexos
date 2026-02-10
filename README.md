@@ -31,7 +31,7 @@ O projeto foi construído seguindo os princípios de **Clean Architecture** e **
 
 - [x] **Gestão de Clientes (CRM):** Cadastro completo com vínculo processual.
 - [x] **Rastreio Automático:** Monitoramento de processos pelo número CNJ unificado.
-- [x] **Dashboard Analítico:** Visão geral de processos ativos, arquivados e prazos.
+- [ ] **Dashboard Analítico:** Visão geral de processos ativos, arquivados e prazos.
 - [ ] **Notificações:** Alertas via E-mail/WhatsApp sobre novas movimentações (Roadmap).
 
 ## ⚙️ Como Executar Localmente
