@@ -33,6 +33,8 @@ O projeto foi construído seguindo os princípios de **Clean Architecture** e **
 - [x] **Rastreio Automático:** Monitoramento de processos pelo número CNJ unificado.
 - [ ] **Dashboard Analítico:** Visão geral de processos ativos, arquivados e prazos.
 - [ ] **Notificações:** Alertas via E-mail/WhatsApp sobre novas movimentações (Roadmap).
+- [ ] **New Features:** ...
+
 
 ## ⚙️ Como Executar Localmente
 
