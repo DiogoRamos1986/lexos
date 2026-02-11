@@ -1,8 +1,7 @@
-/* 1. RESET E GERAL */
-* {
+{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Essencial para as proporções não quebrarem */
+    box-sizing: border-box; /* Para as proporções não quebrarem */
 }
 
 body {
@@ -15,7 +14,7 @@ body {
     min-height: 100vh;
 }
 
-/* 2. HEADER E NAVEGAÇÃO (O ajuste que você pediu) */
+/* 2. HEADER E NAVEGAÇÃO*/
 header {
     background-color: #ffffff;
     width: 100%;
