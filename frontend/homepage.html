@@ -9,54 +9,52 @@
 <body>
 
     <header>
-        <nav>
-            <h1>Lexos</h1>
-            <ul>
-                <li><a href="#funcionalidades">Funcionalidades</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
+        <nav class="navbar">
+            <h1 class="logo">Lexos</h1>
+            <ul class="nav-links">
+                <li><a href="funcionalidades.html">Funcionalidades</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="hero">
+
+    <main class="hero-container">
+        <section id="hero-text">
             <h2>Simplifique sua gestão com o Lexos</h2>
-            <p>A solução completa para organizar seu fluxo de trabalho.</p>
-            <button>Começar Agora</button>
+            <p>A solução completa para organizar seu fluxo de trabalho, processos e clientes em um só lugar.</p>
+            <a href="registro-sistema.html" class="btn-main">Começar Agora</a>
         </section>
 
-        <section id="funcionalidades">
-            <h3>Por que escolher o Lexos?</h3>
-            <div>
-                <h4>Rápido</h4>
-                <p>Performance otimizada para o seu dia a dia.</p>
-            </div>
-            <div>
-                <h4>Seguro</h4>
-                <p>Seus dados protegidos com criptografia moderna.</p>
-            </div>
-        </section>
         <section id="login-container">
             <h2>Acesse sua conta</h2>
-            <form action="/login" method="POST">
+            <form action="dashboard.html">
                 <div class="field">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
                 </div>
 
                 <div class="field">
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha" required>
                 </div>
 
-              <button type="submit">Entrar</button>
-              <form action="dashboard.html">
-                    
-              </form>
-                    <a href="#">Esqueceu a senha?</a>
+                <button type="submit">Entrar no Sistema</button>
+                <a href="#" class="forgot-pass">Esqueceu a senha?</a>
             </form>
         </section>
     </main>
+
+    <section id="features-home">
+        <div class="feat-card">
+            <h4>🚀 Rápido</h4>
+            <p>Performance otimizada para o dia a dia.</p>
+        </div>
+        <div class="feat-card">
+            <h4>🛡️ Seguro</h4>
+            <p>Dados protegidos com criptografia.</p>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2026 Projeto Lexos. Todos os direitos reservados.</p>
