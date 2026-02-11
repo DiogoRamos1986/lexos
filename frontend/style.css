@@ -1,58 +1,109 @@
-/* Configurações Gerais */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7f6;
+/* 1. RESET E GERAL */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Essencial para as proporções não quebrarem */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 
-/* Estilização do Container de Login */
-#login-container {
+/* 2. HEADER E NAVEGAÇÃO (O ajuste que você pediu) */
+header {
     background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin-top: 50px;
+    width: 100%;
+    padding: 1rem 10%; /* Espaçamento interno */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Logo na esquerda, links na direita */
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* Distância proporcional entre os itens */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* 3. CONTAINER DE LOGIN */
+#login-container {
+    background-color: #fff;
+    margin-top: 80px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
 }
 
 h2 {
     text-align: center;
-    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
 }
 
-/* Espaçamento dos campos */
 .field {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do input */
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
 }
 
-/* Estilo do Botão */
+input:focus {
+    border-color: #007bff;
+}
+
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 16px;
     transition: background 0.3s;
 }
 
@@ -60,11 +111,11 @@ button:hover {
     background-color: #0056b3;
 }
 
-a {
+.forgot-pass {
     display: block;
     text-align: center;
-    margin-top: 10px;
-    font-size: 12px;
+    margin-top: 15px;
+    font-size: 0.85rem;
     color: #007bff;
     text-decoration: none;
 }
