@@ -1,0 +1,34 @@
+.reports-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+.chart-placeholder {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.bar-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    height: 150px;
+    margin-top: 20px;
+    border-bottom: 2px solid #eee;
+}
+.bar {
+    flex: 1;
+    background: #4a90e2;
+    border-radius: 4px 4px 0 0;
+    transition: 0.3s;
+}
+.bar:hover { background: #357abd; }
+.btn-export {
+    background: #1a202c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}

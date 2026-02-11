@@ -2,25 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Lexos - Agenda</title>
+    <title>Lexos - Relatórios</title>
     <link rel="stylesheet" href="style-dash.css">
-    <style>
-        .agenda-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .dia-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .evento {
-            border-bottom: 1px solid #eee;
-            padding: 10px 0;
-        }
-        .hora { font-weight: bold; color: #4a90e2; margin-right: 10px; }
-    </style>
+    <link rel="stylesheet" href="style-relatorios.css">
 </head>
 <body>
     <div class="container">
@@ -40,17 +24,30 @@
                 <a href="homepage.html" style="color: #ff4d4d; text-decoration: none; font-weight: bold;">🚪 Sair</a>
             </div>
         </aside>
+
         <main class="content">
-            <h2>Agenda de Compromissos</h2>
-            <div class="agenda-grid">
-                <div class="dia-card">
-                    <h3>Hoje</h3>
-                    <div class="evento"><span class="hora">09:00</span> Reunião com João Silva</div>
-                    <div class="evento"><span class="hora">14:30</span> Audiência Trabalhista</div>
+            <header class="top-bar">
+                <h2>Relatórios e Performance</h2>
+                <button class="btn-export">📥 Exportar PDF</button>
+            </header>
+
+            <div class="reports-grid">
+                <div class="chart-placeholder">
+                    <h3>Crescimento de Clientes</h3>
+                    <div class="bar-chart">
+                        <div class="bar" style="height: 40%"></div>
+                        <div class="bar" style="height: 60%"></div>
+                        <div class="bar" style="height: 85%"></div>
+                        <div class="bar" style="height: 50%"></div>
+                    </div>
                 </div>
-                <div class="dia-card">
-                    <h3>Amanhã</h3>
-                    <div class="evento"><span class="hora">10:00</span> Entrega de Documentos</div>
+                <div class="chart-placeholder">
+                    <h3>Processos por Status</h3>
+                    <ul class="status-list">
+                        <li>🔵 Ativos: <strong>42</strong></li>
+                        <li>🟢 Concluídos: <strong>115</strong></li>
+                        <li>🔴 Suspensos: <strong>8</strong></li>
+                    </ul>
                 </div>
             </div>
         </main>

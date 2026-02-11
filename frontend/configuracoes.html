@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lexos - Configurações</title>
+    <link rel="stylesheet" href="style-dash.css">
+    <link rel="stylesheet" href="style-config.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">LEXOS</div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html" class="active">🏠 Início</a></li>
+                    <li><a href="cadastro-clientes.html">👤 Cadastro de Clientes</a></li>
+                    <li><a href="processos.html">⚖️ Processos em Andamento</a></li>
+                    <li><a href="agenda.html">📅 Agenda</a></li>
+                    <li><a href="relatorios.html">📊 Relatórios</a></li>
+                    <li><a href="configuracoes.html">⚙️ Configurações</a></li>
+                </ul>
+            </nav>
+            <div class="logout">
+                <a href="homepage.html" style="color: #ff4d4d; text-decoration: none; font-weight: bold;">🚪 Sair</a>
+            </div>
+        </aside>
+
+        <main class="content">
+            <h2>Configurações do Sistema</h2>
+            <div class="config-card">
+                <section class="config-section">
+                    <h3>Meu Perfil</h3>
+                    <div class="profile-header">
+                        <div class="avatar">👤</div>
+                        <button class="btn-alt">Alterar Foto</button>
+                    </div>
+                    <div class="input-group">
+                        <label>Nome do Usuário</label>
+                        <input type="text" value="Dr. Administrador">
+                    </div>
+                </section>
+
+                <section class="config-section">
+                    <h3>Preferências</h3>
+                    <div class="toggle-group">
+                        <label>Notificações por E-mail</label>
+                        <input type="checkbox" checked>
+                    </div>
+                    <div class="toggle-group">
+                        <label>Modo Escuro (Beta)</label>
+                        <input type="checkbox">
+                    </div>
+                </section>
+                <button class="btn-save">Salvar Alterações</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
