@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexos - Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-contato.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo"><a href="homepage.html" style="text-decoration:none; color:inherit;">Lexos</a></h1>
+            <ul class="nav-links">
+                <li><a href="funcionalidades.html">Funcionalidades</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-contato">
+        <section class="contato-header">
+            <h2>Fale Conosco</h2>
+            <p>Dúvidas, sugestões ou suporte? Nossa equipe está pronta para te atender.</p>
+        </section>
+
+        <div class="contato-wrapper">
+            <section class="contato-info">
+                <div class="info-item">
+                    <span>📍</span>
+                    <div>
+                        <h4>Endereço</h4>
+                        <p>Av. Paulista, 1000 - São Paulo, SP</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span>📞</span>
+                    <div>
+                        <h4>Telefone</h4>
+                        <p>(11) 4004-0000</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span>📧</span>
+                    <div>
+                        <h4>E-mail</h4>
+                        <p>contato@lexos.com.br</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contato-form">
+                <form>
+                    <div class="field">
+                        <label>Seu Nome</label>
+                        <input type="text" placeholder="Como podemos te chamar?" required>
+                    </div>
+                    <div class="field">
+                        <label>Seu E-mail</label>
+                        <input type="email" placeholder="exemplo@email.com" required>
+                    </div>
+                    <div class="field">
+                        <label>Assunto</label>
+                        <select required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="suporte">Suporte Técnico</option>
+                            <option value="vendas">Planos e Vendas</option>
+                            <option value="parceria">Parcerias</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Mensagem</label>
+                        <textarea rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto Lexos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
