@@ -37,6 +37,23 @@
                 <p>Seus dados protegidos com criptografia moderna.</p>
             </div>
         </section>
+        <section id="login-container">
+            <h2>Acesse sua conta</h2>
+            <form action="/login" method="POST">
+                <div class="field">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="field">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+
+            <button type="submit">Entrar</button>
+            <a href="#">Esqueceu a senha?</a>
+        </form>
+    </section>
     </main>
 
     <footer>
