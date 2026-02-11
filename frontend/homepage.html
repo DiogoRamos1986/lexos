@@ -1,44 +1,47 @@
-<html>
-  <div class="container">
-    <header class="hero">
-      <h1>Lexos</h1>
-      <p>O Lexos é uma solução desenvolvida para modernizar a rotina de escritórios de advocacia, centralizando o acompanhamento de processos e a gestão de clientes em uma interface única.</p>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexos - Gestão Inteligente</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Lexos</h1>
+            <ul>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button>Login</button>
+        </nav>
     </header>
 
-    <main class="content-grid">
-      <section class="info-section">
-        <div class="card">
-          <h3>Por que Lexos?</h3>
-          <ul>
-            <li>✔ Dashboards em tempo real</li>
-            <li>✔ Controle de inventário preciso</li>
-            <li>✔ Integração nativa com Python API</li>
-          </ul>
-        </div>
-      </section>
+    <main>
+        <section id="hero">
+            <h2>Simplifique sua gestão com o Lexos</h2>
+            <p>A solução completa para organizar seu fluxo de trabalho.</p>
+            <button>Começar Agora</button>
+        </section>
 
-      <section class="auth-section">
-        <div class="auth-tabs">
-          <button (click)="mode = 'login'" [class.active]="mode === 'login'">Login</button>
-          <button (click)="mode = 'signup'" [class.active]="mode === 'signup'">Cadastro</button>
-        </div>
-
-        <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
-          <div class="form-group">
-            <label>E-mail</label>
-            <input type="email" formControlName="email" placeholder="seu@email.com">
-          </div>
-          
-          <div class="form-group">
-            <label>Senha</label>
-            <input type="password" formControlName="password" placeholder="********">
-          </div>
-
-          <button type="submit" class="btn-primary">
-            {{ mode === 'login' ? 'Entrar' : 'Criar Conta' }}
-          </button>
-        </form>
-      </section>
+        <section id="funcionalidades">
+            <h3>Por que escolher o Lexos?</h3>
+            <div>
+                <h4>Rápido</h4>
+                <p>Performance otimizada para o seu dia a dia.</p>
+            </div>
+            <div>
+                <h4>Seguro</h4>
+                <p>Seus dados protegidos com criptografia moderna.</p>
+            </div>
+        </section>
     </main>
-  </div>
-</html>  
+
+    <footer>
+        <p>&copy; 2026 Projeto Lexos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
