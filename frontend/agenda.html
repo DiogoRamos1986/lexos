@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lexos - Agenda</title>
+    <link rel="stylesheet" href="style-dash.css">
+    <style>
+        .agenda-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .dia-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .evento {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        .hora { font-weight: bold; color: #4a90e2; margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">LEXOS</div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">🏠 Início</a></li>
+                    <li><a href="cadastro-clientes.html">👤 Cadastro de Clientes</a></li>
+                    <li><a href="processos.html">⚖️ Processos</a></li>
+                    <li><a href="agenda.html" class="active">📅 Agenda</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <h2>Agenda de Compromissos</h2>
+            <div class="agenda-grid">
+                <div class="dia-card">
+                    <h3>Hoje</h3>
+                    <div class="evento"><span class="hora">09:00</span> Reunião com João Silva</div>
+                    <div class="evento"><span class="hora">14:30</span> Audiência Trabalhista</div>
+                </div>
+                <div class="dia-card">
+                    <h3>Amanhã</h3>
+                    <div class="evento"><span class="hora">10:00</span> Entrega de Documentos</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

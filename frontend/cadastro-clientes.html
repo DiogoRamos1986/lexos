@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexos - Cadastro de Clientes</title>
+    <link rel="stylesheet" href="style-dash.css">
+    <link rel="stylesheet" href="style-cadastro.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">LEXOS</div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">🏠 Início</a></li>
+                    <li><a href="cadastro-clientes.html">👤 Cadastro de Clientes</a></li>
+                    <li><a href="processos.html">⚖️ Processos em Andamento</a></li>
+                    <li><a href="agenda.html">📅 Agenda</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header class="top-bar">
+                <h2>Novo Cadastro de Cliente</h2>
+                <a href="dashboard.html" class="btn-voltar">Voltar</a>
+            </header>
+
+            <section class="form-container">
+                <form>
+                    <div class="form-group">
+                        <h3>Dados Pessoais</h3>
+                        <div class="row">
+                            <div class="input-box full">
+                                <label>Nome Completo</label>
+                                <input type="text" placeholder="Ex: João Silva" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-box">
+                                <label>CPF / CNPJ</label>
+                                <input type="text" placeholder="000.000.000-00">
+                            </div>
+                            <div class="input-box">
+                                <label>Data de Nascimento</label>
+                                <input type="date">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h3>Contato</h3>
+                        <div class="row">
+                            <div class="input-box">
+                                <label>E-mail</label>
+                                <input type="email" placeholder="cliente@email.com">
+                            </div>
+                            <div class="input-box">
+                                <label>Telefone / WhatsApp</label>
+                                <input type="tel" placeholder="(00) 00000-0000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h3>Endereço</h3>
+                        <div class="row">
+                            <div class="input-box small">
+                                <label>CEP</label>
+                                <input type="text" placeholder="00000-000">
+                            </div>
+                            <div class="input-box">
+                                <label>Cidade</label>
+                                <input type="text" placeholder="Ex: Rio de Janeiro">
+                            </div>
+                            <div class="input-box small">
+                                <label>UF</label>
+                                <input type="text" maxlength="2" placeholder="RJ">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="reset" class="btn-cancel">Limpar</button>
+                        <button type="submit" class="btn-save">Salvar Cliente</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

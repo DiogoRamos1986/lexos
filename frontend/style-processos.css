@@ -1,0 +1,25 @@
+.processo-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-left: 5px solid #4a90e2;
+}
+.proc-status.urgent {
+    background: #ffe5e5;
+    color: #d9534f;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.btn-novo {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

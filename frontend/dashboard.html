@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexos - Dashboard</title>
+    <link rel="stylesheet" href="style-dash.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">LEXOS</div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">🏠 Início</a></li>
+                    <li><a href="#">👤 Cadastro de Clientes</a></li>
+                    <li><a href="#">⚖️ Processos em Andamento</a></li>
+                    <li><a href="#">📅 Agenda</a></li>
+                    <li><a href="#">📊 Relatórios</a></li>
+                    <li><a href="#">⚙️ Configurações</a></li>
+                </ul>
+            </nav>
+            <div class="logout">
+                <a href="homepage.html">Sair</a>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header class="top-bar">
+                <h2>Visão Geral</h2>
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquisar processos ou clientes...">
+                    <button>Buscar</button>
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                <div class="card">
+                    <h3>Clientes</h3>
+                    <p class="number">128</p>
+                </div>
+                <div class="card warning">
+                    <h3>Processos Ativos</h3>
+                    <p class="number">42</p>
+                </div>
+                <div class="card success">
+                    <h3>Concluídos (Mês)</h3>
+                    <p class="number">15</p>
+                </div>
+            </section>
+
+            <section class="data-section">
+                <h3>Processos em Andamento</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nº Processo</th>
+                            <th>Cliente</th>
+                            <th>Status</th>
+                            <th>Última Atualização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#2026-001</td>
+                            <td>João Silva</td>
+                            <td><span class="status-badge blue">Em análise</span></td>
+                            <td>10/02/2026</td>
+                        </tr>
+                        <tr>
+                            <td>#2026-005</td>
+                            <td>Maria Oliveira</td>
+                            <td><span class="status-badge orange">Aguardando Documento</span></td>
+                            <td>11/02/2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
